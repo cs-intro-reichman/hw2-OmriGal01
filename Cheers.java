@@ -15,7 +15,7 @@ public class Cheers {
                          || (char1 == 'O') || (char1 == 'R') || (char1 == 'S') || (char1 == 'X')) {
                                 isVowel = true;
                          }
-                        System.out.println("Give me " + ((isVowel) ? "an" : "a") + " " + char1 + ": " + char1 + "!");
+                        System.out.println("Give me " + ((isVowel) ? "an" : "a ") + " " + char1 + ": " + char1 + "!");
                         count = count + 1;
                 }
                 System.out.println("What does that spell?");
