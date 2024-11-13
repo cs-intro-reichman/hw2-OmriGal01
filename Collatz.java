@@ -10,7 +10,7 @@ public class Collatz {
 		for (int i = 1; i <= n; i++) {
 			seed = i;
 			while (!reachOne) {
-				System.out.print((isV) ? (seed + ", ") : "");		
+				System.out.print((isV) ? (seed + " ") : "");		
 				if (seed % 2 == 0) {
 					seed = seed / 2;
 					count++;
