@@ -12,7 +12,7 @@ public class Cheers {
                 while (count < cheer.length()) {
                         char1 = cheer.charAt(count);
                         isVowel = false;
-                        if (vowels.indexOf(char1) == -1) {
+                        if (vowels.indexOf(char1) != -1) {
                                 isVowel = true;
                                 //Checks if the given letter is pronounced with a vowel first or not.
                          }
