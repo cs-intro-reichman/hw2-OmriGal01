@@ -6,11 +6,12 @@ public class CalcPi {
 		double sum = 0;
 		double denominator = 1;
 		boolean isPlus = true;
+		
 		while (count < n) {
 			sum = sum + (((isPlus) ? (1) : (-1)) * (1 / denominator));
-			denominator = denominator + 2;
+			denominator += 2;
 			isPlus = !isPlus;
-			count = count + 1;
+			count++;
 		}
 		System.out.println("pi according to Java: " + Math.PI);
 		System.out.println("pi, approximated:     " + sum * 4);
