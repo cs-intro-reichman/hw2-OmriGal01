@@ -7,7 +7,7 @@ public class Cheers {
                 int count = 0;
                 boolean isVowel;
                 char char1;
-                String vowels = "REFHILMNORSX";
+                String vowels = "AEFHILMNORSX";
 
                 while (count < cheer.length()) {
                         char1 = cheer.charAt(count);
