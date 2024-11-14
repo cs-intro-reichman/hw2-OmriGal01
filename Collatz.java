@@ -7,9 +7,13 @@ public class Collatz {
 		boolean isV = (mode.equals("v") ? true : false);
 		boolean reachOne = false;
 		int count = 1;
+
 		for (int i = 1; i <= n; i++) {
+			//The outer loop, that runs the given number of times.
 			seed = i;
+
 			while (!reachOne) {
+				//The nested loop, that runs the Collatz sequence for every i.
 				System.out.print((isV) ? (seed + " ") : "");		
 				if (seed % 2 == 0) {
 					seed = seed / 2;
@@ -26,7 +30,6 @@ public class Collatz {
 			}
 			count = 1;
 			reachOne = false;
-			//System.out.println(i);
 			}
 			System.out.println("Every one of the first " + n + " hailstone sequences reached 1.");
 			//If the loop ended, it means all the sequences have reached 1, so no need to check.

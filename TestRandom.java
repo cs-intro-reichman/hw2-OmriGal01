@@ -6,6 +6,7 @@ public  class  TestRandom {
 		int greater = 0;
 		double lesser = 0;	
 		double rand;
+		
 		while (count < n) {
 			rand = Math.random();
 			if (rand > 0.5) {greater = greater + 1;}
